@@ -13,24 +13,17 @@
   <title>Hello, world!</title>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     @media screen and (max-width: 500px) {
       * {
-        font-size: 13px !important;
-        font-family: 'Roboto', sans-serif;
+        font-size: 10px !important;
       }
 
       .calc-height {
-        height: calc(100vh - 98px) !important;
+        height: calc(100vh - 165px) !important;
       }
 
       .menu-text{
         display: none;
-      }
-
-      .place-bet{
-        height: 30px !important;
-        font-weight: bold !important;
       }
     }
 
@@ -39,31 +32,13 @@
       font-size: 16px;
       margin: 0;
       padding: 0;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    .btn-dark
-    {
-      background-color: #161A25 !important;
-      color: #e0e3ee !important;
-    }
-
-    .btn-success
-    {
-      background-color: #26A69A !important;
-    }
-
-    .table-dark
-    {
-      background-color: #161A25 !important;
-      color: #e0e3ee !important;
     }
 
     .calc-height {
       position: absolute;
       left: 0;
       right: 0;
-      height: calc(100vh - 119px);
+      height: calc(100vh - 250px);
       width: 100%;
       background-color: #0c0c0e;
     }
@@ -101,12 +76,12 @@
 
   <div class="header">
 
-    <table class="table table-dark text-light mb-0">
+    <table class="table table-dark mb-0">
       <thead>
         <tr>
           <th scope="col"><img src="img/metal-mtl-logo.svg" width="30" height="24" class="d-inline-block" />
            SPIKE</th>
-          <!-- <th scope="col" class="texty">
+          <th scope="col" class="texty">
             <img src="img/bitcoin-btc-logo.svg" width="30" height="24" class="d-inline-block" />
             <span class="menu-text">BITCOIN</span> 
           </th>
@@ -117,28 +92,13 @@
           <th scope="col" class="texty">
             <img src="img/litecoin-ltc-logo.svg" width="30" height="24" class="d-inline-block" />
             <span class="menu-text">LITECOIN</span>
-          </th> -->
-          <th scope="col" style="text-align: right;">
-            <!-- <img src="img/bitcoin-btc-logo.svg" width="30" height="24" class="d-inline-block" />
-            <img src="img/ethereum-classic-etc-logo.svg" width="30" height="24" class="d-inline-block" />
-            <img src="img/litecoin-ltc-logo.svg" width="30" height="24" class="d-inline-block" /> -->
-
-
-            <button class="btn btn-outline-secondary btn-sm rounded-0 position-relative" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              HOW TO PLAY
-              <!-- <span class="position-absolute top-0 start-80 translate-middle badge  badge rounded-pill bg-danger">
-                ?
-                <span class="visually-hidden">unread messages</span>
-              </span> -->
-            </button>
-
-            <!-- <span class="btn btn-outline-secondary btn-sm rounded-0">INFO</span> -->
-
           </th>
+          <th scope="col" style="text-align: right;">
+            <span class="btn btn-outline-success btn-sm rounded-0">BALANCE: R200</span></th>
         </tr>
       </thead>
     </table>
-    <button class="btn btn-success w-100 rounded-0 place-bet" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">PLACE BET</button>
+    <button class="btn btn-success w-100 rounded-0" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">PLACE BET</button>
 
   </div>
 
@@ -174,29 +134,7 @@
   </div>
 
   <div class="footer">
-
-    <div class="row g-0">
-      <div class="col-4">
-        <button class="btn btn-dark w-100 rounded-0 place-bet" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">BACK TO LOBBY</button>
-      </div>
-      <div class="col-4">
-        <button class="btn btn-dark w-100 rounded-0 place-bet position-relative" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          MY BETS
-          <span class="position-absolute top-0 start-80 translate-middle badge  badge rounded-pill bg-danger">
-            99+
-            <span class="visually-hidden">unread messages</span>
-          </span>
-        </button>
-      </div>
-      <div class="col-4">
-        <button class="btn btn-dark w-100 rounded-0 place-bet" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">PLACE BET</button>
-      </div>
-    </div>
-
-  
-
-
-    <!-- <table class="table table-dark dark table-borderless text-light mb-0">
+    <table class="table table-dark mb-0">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -232,30 +170,30 @@
         </tr>
        
       </tbody>
-    </table> -->
+    </table>
   </div>
 
 
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered rounded-0">
-    <div class="modal-content bg-dark text-light rounded-0">
-      <div class="modal-header text-light">
-        <h5 class="modal-title text-light w-100 text-center" id="staticBackdropLabel">PLACE A BET ON BITCOIN</h5>
-        <button type="button" class="btn-close" style="color: #f1f3f6 !Important;" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="modal-dialog  modal-dialog-centered rounded-0">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <h5 class="modal-title  w-100 text-center" id="staticBackdropLabel">PLACE A BET ON BITCOIN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body text-light text-center">
+      <div class="modal-body text-center">
 
         <div class="input-group mb-4 mx-auto" style="width: 300px;">
-          <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
-          <label class="btn btn-outline-success" for="success-outlined">Price to go Up</label>
-
-          <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
-          <label class="btn btn-outline-danger" for="danger-outlined">Price to go Down</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>DIRECTION</option>
+            <option value="1">UP</option>
+            <option value="2">DOWN</option>
+          </select>
         </div>
 
-        <div class="input-group mb-4 mx-auto bg-dark" style="width: 300px;">
+        <div class="input-group mb-4 mx-auto" style="width: 300px;">
           <select class="form-select" aria-label="Default select example">
             <option selected>STAKE</option>
             <option value="1">1</option>
